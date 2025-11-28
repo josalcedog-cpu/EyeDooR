@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #000;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .register-container {
+      background-color: #111;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+      width: 400px;
+      padding: 40px 35px;
+      text-align: center;
+      color: #fff;
+    }
+
+    a {
+      color: #cccccc;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .flash-messages {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 400px;
+    }
+
+    .alert {
+      padding: 12px 16px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      animation: fadeOut 4s forwards;
+    }
+
+    .alert.success { background-color: #27ae60; }
+    .alert.error { background-color: #e74c3c; }
+
+    @keyframes fadeOut {
+      0% { opacity: 1; }
+      80% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    .input-group {
+      position: relative;
+      width: 80%;
+      margin: 0 auto 18px;
+      margin-right: 100px;
+    }
+
+    .input-group i {
+      position: absolute;
+      top: 13px;
+      left: 12px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 12px 40px;
+      border: none;
+      border-radius: 10px;
+      background-color: #fff;
+      outline: none;
+    }
+
+    .btn {
+      width: 90%;
+      max-width: 330px;
+      background-color: #c0392b;
+      color: #fff;
+      border-radius: 10px;
+      padding: 12px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+  {% if messages %}
+    <div class="flash-messages">
+      {% for category, message in messages %}
+        <div class="alert {{ category }}">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% endwith %}
+
+  <div class="register-container">
+
+    <h2>Registro</h2>
+
+    <form method="POST" action="{{ url_for('registro') }}">
+
+      <div class="input-group">
+        <i class="fa fa-envelope"></i>
+        <input autocomplete="off" type="email" name="email" placeholder="Correo electrónico" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input autocomplete="off" type="password" name="password" placeholder="Contraseña" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <input autocomplete="off" type="password" name="password2" placeholder="Confirmar contraseña" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-key"></i>
+        <input autocomplete="off" type="text" name="product_code" placeholder="Código de producto" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-question-circle"></i>
+        <input autocomplete="off" type="text" name="security_question" placeholder="Pregunta de seguridad" required>
+      </div>
+
+      <div class="input-group">
+        <i class="fa fa-key"></i>
+        <input autocomplete="off" type="text" name="security_answer" placeholder="Respuesta" required>
+      </div>
+
+      <button type="submit" class="btn">Crear Cuenta</button>
+
+    </form>
+
+    <div class="login">
+      ¿Ya tienes una cuenta?: <a href="{{ url_for('login') }}">Inicia sesión</a>
+    </div>
+
+  </div>
+
+<script>
+
+// esto bloquea lo de el boton para atras
+if (performance.navigation.type === 2) {
+    window.location.replace(window.location.href);
+}
+
+history.replaceState(null, null, location.href);
+history.pushState(null, null, location.href);
+
+window.addEventListener("popstate", function () {
+    history.pushState(null, null, location.href);
+    window.location.replace(window.location.href);
+});
+
+setInterval(() => {
+    history.pushState(null, null, location.href);
+}, 150);
+
+window.addEventListener("pageshow", function (event) {
+    if (event.persisted) {
+        window.location.reload();
+    }
+});
+</script>
+
+</body>
+</html>
