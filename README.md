@@ -1,6 +1,6 @@
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║                   📋 REQUISITOS DEL PROYECTO EYEDOOR                         ║
-║                         Sistema de Timbre Inteligente                        ║
+                   REQUISITOS DEL PROYECTO EYEDOOR                        
+                                         
 ╚══════════════════════════════════════════════════════════════════════════════╝
 
 El proyecto EyeDooR consta de 3 componentes principales:
