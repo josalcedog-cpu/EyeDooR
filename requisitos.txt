@@ -1,4 +1,4 @@
-En parte de python - flask se necesita instalar en la terminal:
+En la parte de python - flask se necesita instalar en la terminal:
 
 - pip install flask firebase-admin werkzeug requests
 
