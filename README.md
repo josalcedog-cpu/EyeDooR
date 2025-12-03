@@ -1,8 +1,4 @@
-╔══════════════════════════════════════════════════════════════════════════════╗
-                   REQUISITOS DEL PROYECTO EYEDOOR                        
-                                         
-╚══════════════════════════════════════════════════════════════════════════════╝
-
+<h3>REQUERIMIENTOS DEL DISPOSITIVO EyEDooR<h3>
 El proyecto EyeDooR consta de 3 componentes principales:
 1. Backend (Python/Flask)
 2. Frontend (HTML/CSS/JavaScript)
