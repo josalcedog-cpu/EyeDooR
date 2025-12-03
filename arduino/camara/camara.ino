@@ -4,8 +4,8 @@
 #include "freertos/semphr.h"
 
 // ===== CREDENCIALES WIFI =====
-const char* ssid = "Redmi Note 13 Pro";
-const char* password = "Alsa0965";
+const char* ssid = "Antonio";
+const char* password = "12345678";
 
 // ===== PINES ESP32-CAM AI THINKER =====
 #define PWDN_GPIO_NUM     32

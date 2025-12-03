@@ -1,0 +1,8 @@
+En parte de python - flask se necesita instalar en la terminal:
+
+- pip install flask firebase-admin werkzeug requests
+
+En la parte de Arduino - ESP32 se necesita instalar en la IDE de Arduino:
+
+- Instalación: Sketch > Incluir biblioteca > Gestionar bibliotecas > Buscar "Firebase ESP32 Client" by Mobizt
+- Instalación: Herramientras > Placas > Gestor de placas > "esp32" by Espressif Systems
