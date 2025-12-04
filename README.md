@@ -301,3 +301,7 @@ Fotos no se capturan:
    └─ Verificar IP del ESP32-CAM (puede cambiar)
    └─ Actualizar CAMERA_CAPTURE_URL en app.py
    └─ Revisar que el puerto 81 esté respondiendo
+
+Timbre no transmite información a la base de datos:
+   └─ Oprimir el boton de reset (EN) de la ESP32
+   └─ Revisar tipo de seguridad (Asegurar WPA2-Personal en caso de Datos Moviles)
