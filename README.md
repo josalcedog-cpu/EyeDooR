@@ -5,7 +5,7 @@ El proyecto EyeDooR consta de 3 componentes principales:
 3. Hardware (Arduino/ESP32)
 
 
-#🐍 PARTE 1: BACKEND (PYTHON/FLASK)
+# 🐍 PARTE 1: BACKEND (PYTHON/FLASK)
 
 📦 Instalación de Dependencias
 ------------------------------
