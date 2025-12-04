@@ -5,9 +5,7 @@ El proyecto EyeDooR consta de 3 componentes principales:
 3. Hardware (Arduino/ESP32)
 
 
-═══════════════════════════════════════════════════════════════════════════════
-                        🐍 PARTE 1: BACKEND (PYTHON/FLASK)
-═══════════════════════════════════════════════════════════════════════════════
+#🐍 PARTE 1: BACKEND (PYTHON/FLASK)
 
 📦 Instalación de Dependencias
 ------------------------------
@@ -67,9 +65,8 @@ Ejecutar en la terminal/PowerShell:
 El servidor estará disponible en: http://localhost:5000 o http://0.0.0.0:5000
 
 
-═══════════════════════════════════════════════════════════════════════════════
-🎨 PARTE 2: FRONTEND (HTML/CSS/JAVASCRIPT)
-═══════════════════════════════════════════════════════════════════════════════
+# 🎨 PARTE 2: FRONTEND (HTML/CSS/JAVASCRIPT)
+
 
 📦 Librerías JavaScript (CDN - No Requiere Instalación)
 --------------------------------------------------------
@@ -104,9 +101,7 @@ El servidor estará disponible en: http://localhost:5000 o http://0.0.0.0:5000
 - Safari 14+
 
 
-═══════════════════════════════════════════════════════════════════════════════
-🔌 PARTE 3: HARDWARE (ARDUINO/ESP32)
-═══════════════════════════════════════════════════════════════════════════════
+#🔌 PARTE 3: HARDWARE (ARDUINO/ESP32)
 
 El proyecto utiliza 2 dispositivos ESP32:
 1. ESP32 con botón de timbre (arduino/boton/boton.ino)
@@ -232,10 +227,7 @@ ESP32-CAM AI-Thinker:
    ├─ Calidad JPEG: 10 (alta calidad)
    └─ Frame buffers: 2 (para streaming fluido)
 
-
-═══════════════════════════════════════════════════════════════════════════════
-🗄️ PARTE 4: BASE DE DATOS (FIREBASE REALTIME DATABASE)
-═══════════════════════════════════════════════════════════════════════════════
+# 🗄️ PARTE 4: BASE DE DATOS (FIREBASE REALTIME DATABASE)
 
 Estructura de la Base de Datos:
 --------------------------------
@@ -264,9 +256,7 @@ Configuración de Firebase:
    └─ Archivo de credenciales: eyedoor-firebase.json
 
 
-═══════════════════════════════════════════════════════════════════════════════
-🚀 GUÍA DE INICIO RÁPIDO
-═══════════════════════════════════════════════════════════════════════════════
+# 🚀 GUÍA DE INICIO RÁPIDO
 
 Paso 1: Configurar Backend
    1. Instalar Python 3.8+
@@ -289,9 +279,7 @@ Paso 3: Verificar Funcionamiento
    5. Presionar el botón físico o web para tomar una foto
 
 
-═══════════════════════════════════════════════════════════════════════════════
-⚠️ SOLUCIÓN DE PROBLEMAS COMUNES
-═══════════════════════════════════════════════════════════════════════════════
+# ⚠️ SOLUCIÓN DE PROBLEMAS COMUNES
 
 Backend no inicia:
    └─ Verificar que el puerto 5000 no esté en uso
@@ -316,16 +304,3 @@ Fotos no se capturan:
    └─ Verificar IP del ESP32-CAM (puede cambiar)
    └─ Actualizar CAMERA_CAPTURE_URL en app.py
    └─ Revisar que el puerto 81 esté respondiendo
-
-
-═══════════════════════════════════════════════════════════════════════════════
-📞 INFORMACIÓN ADICIONAL
-═══════════════════════════════════════════════════════════════════════════════
-
-Para una documentación técnica completa con diagramas y explicaciones
-detalladas de cada componente, consulta el archivo:
-   documentacion_eyedoor.md
-
-═══════════════════════════════════════════════════════════════════════════════
-                            Fin del Documento
-═══════════════════════════════════════════════════════════════════════════════
