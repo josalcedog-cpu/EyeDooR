@@ -93,14 +93,6 @@ El servidor estará disponible en: http://localhost:5000 o http://0.0.0.0:5000
 - static/logo.png (logo de la aplicación)
 
 
-🌐 Navegadores Compatibles
----------------------------
-- Google Chrome 90+
-- Mozilla Firefox 88+
-- Microsoft Edge 90+
-- Safari 14+
-
-
 # 🔌 PARTE 3: HARDWARE (ARDUINO/ESP32)
 
 El proyecto utiliza 2 dispositivos ESP32:
