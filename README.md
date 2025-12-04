@@ -192,8 +192,8 @@ Configuración del ESP32-CAM:
 🔧 Configuración de Red WiFi
 -----------------------------
 Ambos ESP32 deben estar en la misma red WiFi:
-   ├─ SSID: "Antonio"
-   ├─ Contraseña: "12345678"
+   ├─ SSID: "Antonio" (cambiar a su red)
+   ├─ Contraseña: "12345678" (cambiar a su contraseña)
    ├─ Tipo: 2.4 GHz (ESP32 no soporta 5 GHz)
    └─ IP del ESP32-CAM: 10.154.150.123 (puede variar)
 
@@ -252,9 +252,14 @@ Configuración de Firebase:
 
 Paso 1: Configurar Backend
    1. Instalar Python 3.8+
-   2. pip install flask firebase-admin werkzeug requests
-   3. Colocar eyedoor-firebase.json en la carpeta del proyecto
-   4. python app.py
+   2. Buscar const firebaseConfig en Firebase: Abrir https://firebase.google.com/?authuser=2&hl=es-419 --> Compilación --> Realtime Database --> Comenzar --> (Su Nombre de Proyecto) --> Configuración del proyecto (Simbolo de Engranaje) ---> General --> Bajar a Tus Apps    --> Apps Web --> (Nombre de su app web) --> Ahi encontrará la configuración del SDK --> Buscar en el codigo debajo de configuración del SDK y copiar todo: (const firebaseConfig = {) excepto: (measurementId: "ejemplo de clave")
+   - Cambiar el const firebaseConfig de bienvenido.html, por todo el const firebaseConfig encontrado dentro de su configuracion de Firebase.
+   - Cambiar 'databaseURL' encontrado en app.py, por el "databaseURL" encontrado dentro de su configuracion de Firebase.
+   3. pip install flask firebase-admin werkzeug requests
+   4. Generar nueva clave privada en: Configuración del proyecto (Simbolo de Engranaje) --> Cuentas de servicio --> SDK de Firebase Admin, luego, al generar la nueva clave privada:
+   - A la nueva clave privada, proceder a cambiarle el nombre al archivo.json por "eyedor-firebase.json"
+   - Colocar eyedoor-firebase.json en la carpeta del proyecto
+   5. python app.py
 
 Paso 2: Programar Hardware
    1. Instalar Arduino IDE
