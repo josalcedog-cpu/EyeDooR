@@ -101,7 +101,7 @@ El servidor estará disponible en: http://localhost:5000 o http://0.0.0.0:5000
 - Safari 14+
 
 
-#🔌 PARTE 3: HARDWARE (ARDUINO/ESP32)
+# 🔌 PARTE 3: HARDWARE (ARDUINO/ESP32)
 
 El proyecto utiliza 2 dispositivos ESP32:
 1. ESP32 con botón de timbre (arduino/boton/boton.ino)
