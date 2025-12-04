@@ -1,4 +1,4 @@
-<h1> REQUERIMIENTOS DEL DISPOSITIVO EyEDooR </h1>
+# REQUERIMIENTOS DEL DISPOSITIVO EyEDooR
 El proyecto EyeDooR consta de 3 componentes principales:
 1. Backend (Python/Flask)
 2. Frontend (HTML/CSS/JavaScript)
