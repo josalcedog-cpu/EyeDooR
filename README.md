@@ -303,5 +303,9 @@ Fotos no se capturan:
    └─ Revisar que el puerto 81 esté respondiendo
 
 Timbre no transmite información a la base de datos:
+
    └─ Oprimir el boton de reset (EN) de la ESP32
+   
+   <img width="404" height="243" alt="image" src="https://github.com/user-attachments/assets/4795b59b-dba1-4521-8395-9e81cdf75027" />
+   
    └─ Revisar tipo de seguridad (Asegurar WPA2-Personal en caso de Datos Moviles)
